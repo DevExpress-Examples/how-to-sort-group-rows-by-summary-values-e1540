@@ -1,0 +1,23 @@
+﻿<Window x:Class="DXSample_SortGroupsBySummary.Window1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:dxd="http://schemas.devexpress.com/winfx/2008/xaml/core"
+    xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
+    Title="Window1" Height="300" Width="484" >
+    <Grid>
+        <dxg:GridControl x:Name="grid">
+            <dxg:GridControl.Columns>
+                <dxg:GridColumn FieldName="UserName">User Name</dxg:GridColumn>
+                <dxg:GridColumn FieldName="RegistrationDate" GroupIndex="0">
+                    Registration Date</dxg:GridColumn>
+                <dxg:GridColumn FieldName="Age"/>
+            </dxg:GridControl.Columns>
+            <dxg:GridControl.View>
+                <dxg:TableView AutoWidth="True"/>
+            </dxg:GridControl.View>
+            <dxg:GridControl.GroupSummary>
+                <dxd:GridSummaryItem FieldName="Age" SummaryType="Max"/>
+            </dxg:GridControl.GroupSummary>
+        </dxg:GridControl>
+    </Grid>
+</Window>
