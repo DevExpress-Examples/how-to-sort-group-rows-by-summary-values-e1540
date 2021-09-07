@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DXSample_SortGroupsBySummary", "DXSample_SortGroupsBySummary\DXSample_SortGroupsBySummary.vbproj", "{EE0CA9EC-9E3C-4343-8413-7F7ACE6BFC38}"
+# Visual Studio 16
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DXSample_SortGroupsBySummary", "DXSample_SortGroupsBySummary\DXSample_SortGroupsBySummary.Net5.vbproj", "{EE0CA9EC-9E3C-4343-8413-7F7ACE6BFC38}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
