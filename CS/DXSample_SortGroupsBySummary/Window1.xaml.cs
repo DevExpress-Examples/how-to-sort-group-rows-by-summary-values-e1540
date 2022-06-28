@@ -1,28 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using DevExpress.Xpf.Grid;
+using System;
+using System.Collections.ObjectModel;
 using System.Windows;
-using System.Windows.Documents;
-using DevExpress.Xpf.Grid;
 
 namespace DXSample_SortGroupsBySummary {
     public partial class Window1 : Window {
         public Window1() {
             InitializeComponent();
-            grid.ItemsSource = new AccountList().GetData();
+            grid.ItemsSource = AccountList.GetData();
             SortGroupsBySummary(view.GroupedColumns[0]);
         }
-        private void SortGroupsBySummary(GridColumn column) {
+        void SortGroupsBySummary(GridColumn column) {
             GridGroupSummarySortInfo sortInfo = new GridGroupSummarySortInfo(grid.GroupSummary[0],
                 column.FieldName, System.ComponentModel.ListSortDirection.Ascending);
             grid.GroupSummarySortInfo.Add(sortInfo);
         }
     }
     public class AccountList {
-        public List<Account> GetData() {
-            return CreateAccounts();
-        }
-        private List<Account> CreateAccounts() {
-            List<Account> list = new List<Account>();
+        public static ObservableCollection<Account> GetData() {
+            ObservableCollection<Account> list = new ObservableCollection<Account>();
             list.Add(new Account() { UserName = "Nick White", 
                 RegistrationDate = DateTime.Today, Age = 57 });
             list.Add(new Account() { UserName = "Jack Rodman",
