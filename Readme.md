@@ -32,7 +32,7 @@ Remove the [GridGroupSummarySortInfo](https://docs.devexpress.com/WPF/DevExpress
 * [WPF Data Grid - How to Use Custom Rules to Sort Data](https://github.com/DevExpress-Examples/how-to-implement-custom-sorting-e963)
 * [WPF Data Grid - How to Display Group Summaries](https://github.com/DevExpress-Examples/how-to-display-group-summaries-e1637)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=how-to-sort-group-rows-by-summary-values-e1540&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=how-to-sort-group-rows-by-summary-values-e1540&~~~was_helpful=no)
 
